@@ -1,0 +1,37 @@
+.contact-us {
+    padding: 60px 0;
+}
+
+.contact-us form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+@media only screen and (min-width: 992px) {
+    .contact-us form {
+        width: 50%;
+    }
+}
+
+.contact-us form textarea,
+.contact-us form input:not([type="submit"]) {
+    padding: 15px;
+    border-radius: 25px;
+    border: none;
+    background-color: #eee;
+}
+
+.contact-us form textarea:focus,
+.contact-us form input:not([type="submit"]):focus {
+    outline: none;
+}
+
+.contact-us form textarea {
+    height: 200px;
+    resize: none;
+}
+
+.contact-us form input[type="submit"] {
+    text-transform: uppercase;
+}

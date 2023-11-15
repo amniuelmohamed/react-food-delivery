@@ -1,0 +1,10 @@
+.why-us-section {
+    padding: 60px 0;
+}
+
+@media only screen and (max-width: 991px) {
+    .why-us-section .section-heading p {
+        margin-right: auto;
+        margin-left: auto;
+    }
+}

@@ -1,0 +1,52 @@
+.login-form {
+    padding: 120px 0;
+}
+
+.login-form .form-wrapper {
+    width: 400px;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px 50px;
+    border-radius: 10px;
+}
+
+.login-form form input:not([type="submit"]):focus {
+    box-shadow: none;
+    border-color: var(--color-text);
+    caret-color: var(--color-primary);
+}
+
+.login-form form .forgot-password {
+    margin-top: -10px;
+    margin-bottom: 10px;
+    display: block;
+    font-size: 0.9rem;
+}
+
+.login-form .with-google {
+    background-color: #d0463b;
+}
+
+.login-form .separator {
+    position: relative;
+}
+
+.login-form .separator::before,
+.login-form .separator::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45%;
+    height: 1px;
+    background-color: #eee;
+}
+
+.login-form .separator::before {
+    right: 0;
+}
+
+.login-form .separator::after {
+    left: 0;
+}

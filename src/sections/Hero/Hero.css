@@ -1,0 +1,45 @@
+.hero-content {
+    max-width: 500px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+}
+
+.hero-content .cta-btns .order-btn,
+.hero-content .cta-btns .see-all-btn {
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+.hero-content .cta-btns .order-btn:hover,
+.hero-content .cta-btns .see-all-btn:hover {
+    transform: translate(2px, -2px);
+}
+
+.hero-content .cta-btns .order-btn {
+    background-color: var(--color-primary);
+    color: white !important;
+}
+
+.hero-content .cta-btns .see-all-btn {
+    background-color: transparent;
+    color: var(--color-primary) !important;
+    border: 1px solid var(--color-primary);
+}
+
+.hero-content .hero-services i {
+    background-color: var(--color-primary);
+    color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.hero-content .hero-services span {
+    font-size: 0.9rem;
+}

@@ -1,0 +1,25 @@
+.popular-foods-section {
+    padding: 60px 0;
+}
+
+.popular-foods-bar {
+    background-color: var(--color-primary);
+    border-radius: 10px;
+}
+
+.popular-foods-bar button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+.popular-foods-bar button.active {
+    background-color: white;
+    color: var(--color-primary) !important;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+
+.popular-foods-bar button img {
+    width: 20px;
+}

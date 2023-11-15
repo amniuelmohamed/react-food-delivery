@@ -1,0 +1,7 @@
+.checkout-page .payment-info .title {
+    border-bottom: 1px solid #eee;
+}
+
+.checkout-page .payment-total {
+    border-top: 1px solid #eee;
+}

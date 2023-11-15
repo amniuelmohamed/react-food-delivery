@@ -1,0 +1,34 @@
+.cart-item .cart-item-img img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.cart-item .quantity-modifier span {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 2px 5px;
+    cursor: pointer;
+}
+
+.cart-item .quantity-modifier span:first-of-type {
+    border-radius: 6px 0 0 6px;
+}
+
+.cart-item .quantity-modifier span:last-of-type {
+    border-radius: 0 6px 6px 0;
+}
+.cart-item .quantity-modifier input {
+    width: 50px;
+    padding: 3px 5px;
+    text-align: center;
+    background-color: #eee;
+    outline: none;
+    border: none;
+}
+
+.cart-item .cart-item-delete i {
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}

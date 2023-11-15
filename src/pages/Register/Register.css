@@ -1,0 +1,18 @@
+.signup-form {
+    padding: 120px 0;
+}
+
+.signup-form form {
+    width: 400px;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px 50px;
+    border-radius: 10px;
+}
+
+.signup-form form input:not([type="submit"]):focus {
+    box-shadow: none;
+    border-color: var(--color-text);
+    caret-color: var(--color-primary);
+}

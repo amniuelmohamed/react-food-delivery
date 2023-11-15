@@ -1,0 +1,10 @@
+.testimonials-section {
+    padding: 60px 0;
+}
+
+@media only screen and (max-width: 991px) {
+    .testimonials-section .section-heading p {
+        margin-right: auto;
+        margin-left: auto;
+    }
+}

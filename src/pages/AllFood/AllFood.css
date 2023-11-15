@@ -1,0 +1,70 @@
+section.all-foods {
+    padding: 60px 0;
+}
+
+.all-foods .search-widget {
+    border-radius: 25px;
+    overflow: hidden;
+    border: 1px solid var(--color-text);
+}
+
+.all-foods .search-input {
+    padding: 10px 10px 10px 20px;
+    border: none;
+    outline: none;
+    caret-color: var(--color-primary);
+}
+
+.all-foods .search-input:focus {
+    outline: none;
+}
+
+.all-foods .search-widget .search-icon {
+    padding: 10px 15px 10px 10px;
+    background-color: var(--color-text);
+    color: white;
+    cursor: pointer;
+}
+
+.all-foods .sort-widget {
+    position: relative;
+}
+
+.all-foods .sort-widget .select-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+}
+
+.all-foods .sort-widget select {
+    appearance: none;
+    padding: 10px 30px 10px 20px;
+    border-radius: 25px;
+    border: 1px solid var(--color-text);
+    cursor: pointer;
+}
+
+.all-foods .sort-widget select:focus {
+    outline: none;
+}
+
+@media only screen and (min-width: 992px) {
+    .all-foods .sort-widget {
+        width: 75%;
+    }
+
+    .all-foods .search-widget {
+        width: 75%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .all-foods .sort-widget {
+        width: 50%;
+    }
+
+    .all-foods .search-widget {
+        width: 50%;
+    }
+}

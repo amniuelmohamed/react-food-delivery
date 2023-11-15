@@ -1,0 +1,10 @@
+export { default as Header } from "./Header/Header";
+export { default as Layout } from "./Layout/Layout";
+export { default as Hero } from "./Hero/Hero";
+export { default as Categories } from "./Categories/Categories";
+export { default as Services } from "./Services/Services";
+export { default as PopularFoods } from "./PopularFoods/PopularFoods";
+export { default as WhyUs } from "./WhyUs/WhyUs";
+export { default as HotPizza } from "./HotPizza/HotPizza";
+export { default as Testimonials } from "./Testimonials/Testimonials";
+export { default as Footer } from "./Footer/Footer";

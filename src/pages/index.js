@@ -1,0 +1,9 @@
+export { default as Home } from "./Home/Home";
+export { default as AllFood } from "./AllFood/AllFood";
+export { default as FoodDetails } from "./FoodDetails/FoodDetails";
+export { default as Contact } from "./Contact/Contact";
+export { default as CartPage } from "./CartPage/CartPage";
+export { default as Checkout } from "./Checkout/Checkout";
+export { default as Login } from "./Login/Login";
+export { default as Register } from "./Register/Register";
+export { default as ResetPassword } from "./ResetPassword/ResetPassword";

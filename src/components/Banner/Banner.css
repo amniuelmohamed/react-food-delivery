@@ -1,0 +1,8 @@
+.banner {
+    background: linear-gradient(#212245b2, #212245b2),
+        url("../../assets/images/banner-02.jpg");
+    padding: 80px 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

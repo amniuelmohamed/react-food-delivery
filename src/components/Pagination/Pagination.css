@@ -1,0 +1,26 @@
+.pagination button {
+    border: none;
+    background-color: var(--color-text);
+    color: white;
+    border-radius: 6px;
+    height: 35px;
+    transition: 0.3s;
+}
+
+.pagination button.numbers {
+    width: 35px;
+}
+
+.pagination button:not(.numbers) {
+    padding: 0 5px;
+}
+
+.pagination button.numbers.active,
+.pagination button:hover {
+    background-color: var(--color-primary);
+}
+
+.pagination button.disabled {
+    background-color: #ddd;
+    pointer-events: none;
+}

@@ -1,0 +1,14 @@
+.categories-section {
+    padding: 40px 0 60px;
+}
+
+.categories-section .category-item {
+    background-color: #eee;
+    padding: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.categories-section .category-item:hover {
+    transform: translateY(-10px);
+}

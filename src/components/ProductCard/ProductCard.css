@@ -1,0 +1,30 @@
+.product-card {
+    border: 1px solid rgb(223 32 32 / 25%);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.product-card .product-img img {
+    cursor: pointer;
+    transition: 0.3s;
+}
+.product-card .product-img img:hover {
+    transform: scale(1.2);
+}
+
+.product-card h4 a {
+    font-size: 1rem;
+}
+
+.product-card .price {
+    font-size: 1.2rem;
+}
+
+.product-card .info button {
+    border: none;
+    outline: none;
+    background-color: var(--color-primary);
+    color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+}

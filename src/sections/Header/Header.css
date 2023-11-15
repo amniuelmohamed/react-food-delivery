@@ -1,0 +1,104 @@
+header {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-shadow: -1px -8px 20px 0px rgba(0, 0, 0, 0.3);
+}
+
+header.sticky-header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 200;
+}
+
+header ul li a {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-text) !important;
+    transition: 0.3s;
+}
+
+header ul li a:hover,
+header ul li a.active {
+    color: var(--color-primary) !important;
+}
+
+header .right-icons i {
+    font-size: 1.3rem;
+    color: var(--color-text);
+    cursor: pointer;
+}
+
+header .right-icons .cart-icon {
+    position: relative;
+}
+
+header .right-icons .cart-badge {
+    position: absolute;
+    top: 0px;
+    right: -5px;
+    background-color: var(--color-primary);
+    color: white;
+    width: 15px;
+    height: 15px;
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-weight: 500;
+}
+
+header .right-icons .logout-btn {
+    background-color: var(--color-text);
+    color: white;
+    cursor: pointer;
+    padding: 5px 15px;
+    border-radius: 25px;
+}
+
+header .right-icons .mobile-menu {
+    font-weight: 600;
+    display: none;
+}
+
+@media only screen and (max-width: 991px) {
+    nav {
+        position: fixed;
+        background-color: #2125296e;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: -100%;
+        transition: 0.3s;
+        z-index: 1000;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 0;
+        right: -100%;
+        background-color: white;
+        justify-content: center;
+        height: 100%;
+        flex-direction: column;
+        width: 250px;
+        transition: 0.3s;
+    }
+
+    .show-menu {
+        right: 0;
+    }
+
+    .show-menu ul {
+        right: 0;
+    }
+
+    header .right-icons .mobile-menu {
+        display: block;
+    }
+}
