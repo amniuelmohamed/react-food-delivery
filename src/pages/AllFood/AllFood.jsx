@@ -13,10 +13,34 @@ const AllFood = () => {
         dispatch(getAllProducts());
     }, [dispatch]);
 
+    // Sorting Products
+    const [sortState, setSortState] = useState("none");
+    const sortMethods = {
+        none: {
+            method: () => null,
+        },
+        ascending: {
+            method: (item1, item2) =>
+                item1.title.toLowerCase() < item2.title.toLowerCase() ? -1 : 1,
+        },
+        descending: {
+            method: (item1, item2) =>
+                item1.title.toLowerCase() > item2.title.toLowerCase() ? -1 : 1,
+        },
+        high_price: {
+            method: (item1, item2) => item2.price - item1.price,
+        },
+        low_price: {
+            method: (item1, item2) => item1.price - item2.price,
+        },
+    };
+
+    const sortedProducts = [...allProducts].sort(sortMethods[sortState].method);
+
     // Filter products based on search term
     const [searchTerm, setSearchTerm] = useState("");
 
-    const filteredProducts = allProducts.filter((item) =>
+    const filteredProducts = sortedProducts.filter((item) =>
         item.title.toLowerCase().includes(searchTerm.toLowerCase())
     );
 
@@ -32,6 +56,7 @@ const AllFood = () => {
     const firstIndex = lastIndex - productsPerPage;
 
     const currentProducts = filteredProducts.slice(firstIndex, lastIndex);
+
     return (
         <>
             <Banner title="All Foods" />
@@ -55,18 +80,23 @@ const AllFood = () => {
                         </Col>
                         <Col md="6">
                             <div className="sort-widget ms-auto">
-                                <select className="w-100">
-                                    <option>Default</option>
+                                <select
+                                    className="w-100"
+                                    onChange={(e) => {
+                                        setSortState(e.target.value);
+                                    }}
+                                >
+                                    <option value="none">Default</option>
                                     <option value="ascending">
                                         Alphabetically, A-Z
                                     </option>
                                     <option value="descending">
                                         Alphabetically, Z-A
                                     </option>
-                                    <option value="high-price">
+                                    <option value="high_price">
                                         High Price
                                     </option>
-                                    <option value="low-price">Low Price</option>
+                                    <option value="low_price">Low Price</option>
                                 </select>
                                 <i className="ri-arrow-down-s-fill select-icon"></i>
                             </div>
